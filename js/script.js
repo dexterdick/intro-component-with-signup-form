@@ -9,6 +9,7 @@ inputGroup.forEach(function(el){
   const img = document.createElement('img');
   div.className = 'error-icon';
   img.setAttribute('src', '/images/icon-error.svg');
+  img.setAttribute('alt', 'Error Icon');
   div.appendChild(img);
   
   el.appendChild(div);
