@@ -40,14 +40,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 100% ;
-  max-width: 600px;
-  
+  max-width:800px;
   height: 100%;
   margin: 0 auto;
-  
-  
-
-  
 }
 .left-side {
   color: var(--White) ;
@@ -83,7 +78,7 @@ body {
   color: var(--White);
   background-color: var(--Blue);
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   border-radius: 5px;
   margin-bottom: 1.5rem;
   font-weight: 700;
@@ -101,6 +96,8 @@ body {
 
 
 #form {
+
+  
   background-color: var(--White);
   border-radius: var(--b-radius);
   padding: 1.5rem;
@@ -206,10 +203,12 @@ body {
   font-size: 1rem;
   text-transform: uppercase;
   box-shadow: 0 3px 0 rgb(56, 204, 140, 0.3);
+
 }
 
 .claim-btn:hover{
-  background-color:hsla(154, 59%, 51%, 0.687)
+  background-color:hsla(154, 59%, 51%, 0.687);
+  transition: .3s all ease-in-out;
 }
 
 .term-of-us{
@@ -224,12 +223,28 @@ body {
   width: 90%;
   color: var(--Red);
   font-weight: 600;
- 
-  
+}
+
+@media only screen and (min-width: 600px){
+
+  .try-it-free span:not(:first-child){
+    display: inline;
+  }
+
+  .heading {
+    
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .content {
+    font-size: 1.1rem;
+  }
+
 }
 
 
-@media only screen and (min-width: 970px){
+@media only screen and (min-width: 995px){
 
   body {
     background-image: url(/images/bg-intro-desktop.png);
@@ -249,7 +264,7 @@ body {
   }
 
   .heading {
-    margin-top: 200px;
+    margin-top: 230px;
     font-size: 2.9rem;
     line-height: 3.4rem;
   }
@@ -291,12 +306,12 @@ body {
   }
 
   .heading {
-    font-size: 3.7rem; 
-    line-height: 3.7rem;
+    font-size: 3.3rem; 
+    line-height: 3.4rem;
   }
 
   .content {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
 
